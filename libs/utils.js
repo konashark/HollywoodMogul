@@ -1,5 +1,16 @@
 var UTILS = {
     // ********************************************
+    loadCss: function (filename) {
+        var fileref = document.createElement("link");
+
+        fileref.rel = "stylesheet";
+        fileref.type = "text/css";
+        fileref.href = filename;
+
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+    },
+
+    // ********************************************
     fadeIn: function (element, callback) {
         var fadeInEventHandler = function () {
             console.log("FADEIN END");

@@ -14,7 +14,7 @@ var SPLASH_VIEW = {};
 
         $('#screen').html(
             '<div id="splash" class="screen">' +
-            '   <div id="splashPrompt">PRESS ENTER TO BEGIN</div>' +
+            '   <div id="splashPrompt">CLICK TO BEGIN</div>' +
             '</div>'
         );
 

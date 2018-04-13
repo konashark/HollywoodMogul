@@ -6,17 +6,25 @@ var TALENT = {};
     this.id = 'TALENT';
     this.asyncExit = true;
 
+    var talent = [];
+
     log('Loaded');
 
     // ********************************************
     this.init = function (params) {
         log('Initializing ' + this.id);
-        //UTILS.loadCss('./css/splash.css');
+        UTILS.loadCss('js/talent.css');
+
+        talent = TALENTMODEL.initTalent();
     };
 
     // ********************************************
     this.enter = function (currentState, userData) {
         log('Entering ' + this.id);
+        TALENTVIEW.drawBaseView();
+        //var talentList = TALENTMODEL.castingCall(12);
+        var talentList = TALENTMODEL.getStartingHand();
+        TALENTVIEW.drawTalentList(talentList);
     };
 
     // ********************************************

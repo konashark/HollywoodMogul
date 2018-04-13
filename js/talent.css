@@ -1,0 +1,37 @@
+.talentTile {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 294px;
+    background-color: #AAAACC;
+    border: solid 3px #8888AA;
+    border-radius: 11px;
+    color: black;
+    margin: 10px;
+    font-family: gameFont;
+    font-size: 24px;
+    text-align: center;
+}
+
+.talentTile:hover {
+    background-color: #EECC44;
+    border: solid 3px #AA8822;
+}
+
+.talentTileImg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
+
+.talentTileRole {
+    position: relative;
+    margin-top: 230px;
+}
+
+.talentTileCost {
+    position: relative;
+}

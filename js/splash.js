@@ -18,6 +18,10 @@ var SPLASH = {};
     this.enter = function (currentState, userData) {
         log('Entering ' + this.id);
         SPLASH_VIEW.draw();
+
+        $('#splash').click(function(ev) {
+            stateManager.transitionTo('TALENT');
+        });
     };
 
     // ********************************************
@@ -43,7 +47,7 @@ var SPLASH = {};
         }
 
         if (event.keyCode === 13) {
-            stateManager.transitionTo('STUDIO');
+            stateManager.transitionTo('TALENT');
         }
 
         var consumed = true;
